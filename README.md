@@ -1,6 +1,10 @@
 # Generating COVIDx Dataset
  Data preprocessing submodule for Udacity's Machine Learning Engineer Nanodegree program.
  
+ <p style="text-align:center">
+ <img src="https://drive.google.com/uc?export=view&id=1xE3OFoQP3hdyI8nP_iU_i9Y7zLJZ4QQO" width="50%" />
+ </p>
+ 
  ## Repo Contents
  
 <img src="https://drive.google.com/uc?export=view&id=1oX3lTBcAGrZcfSB-ZyIs5D3wymxcPToF" width="50%" />
