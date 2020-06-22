@@ -291,21 +291,3 @@ shutil.rmtree("./rsna-data")
 end = time()
 process_time = end - start
 print(f"Data Generation Complete. Processing Time: {str(process_time)} seconds.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
