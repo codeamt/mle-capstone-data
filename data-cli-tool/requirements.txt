@@ -1,0 +1,8 @@
+argparse
+pydicom
+numpy
+pandas
+opencv-python
+pathlib
+kaggle==1.5.6
+pillow
