@@ -4,6 +4,8 @@
  Data preprocessing submodule for Udacity's Machine Learning Engineer Nanodegree program. \n
  <img src="https://drive.google.com/uc?export=view&id=1xE3OFoQP3hdyI8nP_iU_i9Y7zLJZ4QQO" width="300" />
 </p>
+
+ Generates the latest COVIDx Dataset for modeling; from benchmark research model first presented in [[1]](). 
  
  ## Repo Contents
  
@@ -47,18 +49,18 @@ Be sure to upload and extract the output zip file of this pipeline phase to the 
 
 This set aggregates and deduplicates examples to construct COVIDxv3 from the following sources:  
 
-The current COVIDx dataset is constructed by the following open source chest radiography datasets:
-
 - https://github.com/ieee8023/covid-chestxray-dataset
 - https://github.com/agchung/Figure1-COVID-chestxray-dataset
 - https://github.com/agchung/Actualmed-COVID-chestxray-dataset
 - https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 - https://www.kaggle.com/c/rsna-pneumonia-detection-challenge (which came from: https://nihcc.app.box.com/v/ChestXray-NIHCC)
 
-For more notes on previous versions of the dataset, please refer to the original [COVID-Net](https://github.com/lindawangg/COVID-Net) repo for more detailed [documentation](https://github.com/lindawangg/COVID-Net/blob/master/docs/COVIDx.md). https://github.com/lindawangg/COVID-Net
+For more notes on previous versions of the dataset, please refer to the original [COVID-Net](https://github.com/lindawangg/COVID-Net) repo for more detailed [documentation](https://github.com/lindawangg/COVID-Net/blob/master/docs/COVIDx.md). 
 
 ### Chest Radiography Images Distribution 
 
 <img src="https://drive.google.com/uc?export=view&id=1IhjhezM8GYKbUQPeHRTQsFVKW-NE6OHk" width="50%" />
+
+[1] L. Wang and A. Wong, “COVID-Net: A Tailored Deep Convolutional Neural Network Design for Detection of COVID19 Cases from Chest Radiography Images,” ArXiv200309871 Cs Eess, Mar. 2020 [Online]. Available: http://arxiv.org/abs/2003.09871.
 
 
