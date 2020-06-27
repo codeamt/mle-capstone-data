@@ -59,7 +59,7 @@ For more notes on previous versions of the dataset, please refer to the original
 
 ### Chest Radiography Images Distribution 
 
-<img src="https://drive.google.com/uc?export=view&id=1IhjhezM8GYKbUQPeHRTQsFVKW-NE6OHk" width="50%" />
+<img src="https://drive.google.com/uc?export=view&id=1IhjhezM8GYKbUQPeHRTQsFVKW-NE6OHk" wwidth="70%" />
 
 [1] L. Wang and A. Wong, “COVID-Net: A Tailored Deep Convolutional Neural Network Design for Detection of COVID19 Cases from Chest Radiography Images,” ArXiv200309871 Cs Eess, Mar. 2020 [Online]. Available: http://arxiv.org/abs/2003.09871.
 
