@@ -40,13 +40,22 @@ source bin/activate
 python3 get_covidx.py --kaggle_file "/path/to/your/kaggle.json"
 ```
 
-
-Be sure to upload and extract the output zip file of this notebook in your modeling environment.
+Be sure to upload and extract the output zip file of this pipeline phase to the environment/notebook you use for the [modeling phase](https://github.com/codeamt/mle-capstone-modeling).
 
 
 ## About the Data 
 
-This generates training and test samples for COVIDxv3, the dataset used in [1]. For more notes on previous versions, please refer to the COVID-Net repo. For detailed instructions on how to generate the COVIDx dataset, visit the [original repo](https://github.com/lindawangg/COVID-Net/blob/master/docs/COVIDx.md) for detailed instructions. 
+This set aggregates and deduplicates examples to construct COVIDxv3 from the following sources:  
+
+The current COVIDx dataset is constructed by the following open source chest radiography datasets:
+
+- https://github.com/ieee8023/covid-chestxray-dataset
+- https://github.com/agchung/Figure1-COVID-chestxray-dataset
+- https://github.com/agchung/Actualmed-COVID-chestxray-dataset
+- https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
+- https://www.kaggle.com/c/rsna-pneumonia-detection-challenge (which came from: https://nihcc.app.box.com/v/ChestXray-NIHCC)
+
+For more notes on previous versions of the dataset, please refer to the original [COVID-Net](https://github.com/lindawangg/COVID-Net) repo for more detailed [documentation](https://github.com/lindawangg/COVID-Net/blob/master/docs/COVIDx.md). https://github.com/lindawangg/COVID-Net
 
 ### Chest Radiography Images Distribution 
 
