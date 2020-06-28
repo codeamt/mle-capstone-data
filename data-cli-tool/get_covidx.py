@@ -30,7 +30,13 @@ if not os.path.exists(kaggle_file):
   print('A kaggle file does not exist at this location:')
   print('\n'.join(aggle_file))
   sys.exit()
+
 os.environ['KAGGLE_CONFIG_DIR'] = "."
+#dest = os.path.join(os.environ['KAGGLE_CONFIG_DIR'], "kaggle.json")
+
+#shutil.copy(kaggle_file, dest)
+#os.chmod(dest, 600)
+
 with open(str(kaggle_file)) as f:
     print(str(kaggle_file))
     keys = json.load(f)
@@ -38,15 +44,19 @@ with open(str(kaggle_file)) as f:
     os.environ["KAGGLE_KEY"] = keys["key"]
 print("Done Configuring Kaggle.")
 
+
 ### Download data from Kaggle + GitHub ###
 print("Downloading Data from Kaggle and GitHub...")
-subprocess.call(["kaggle", "competitions", "download", "-d", "tawsifurrahman/covid19-radiography-databasee"])
-subprocess.call(["kaggle", "datasets", "download", "-c", "rsna-pneumonia-detection-challenge"])
+subprocess.call(["kaggle", "datasets", "download", "-d", "tawsifurrahman/covid19-radiography-database", "--force"])
+subprocess.call(["wget", "--no-check-certificate", "-r", "https://docs.google.com/uc?export=download&id=1zeyP13qKxNS78ML-cdG4M2SO89k3j4NG", "-O", "COVID-19 Radiography Database.zip"])
+subprocess.call(["kaggle", "competitions", "download", "-c", "rsna-pneumonia-detection-challenge"])
 subprocess.call(["git","clone", "https://github.com/ieee8023/covid-chestxray-dataset.git"])
 subprocess.call(["git","clone", "https://github.com/agchung/Figure1-COVID-chestxray-dataset"])
 subprocess.call(["git","clone", "https://github.com/agchung/Actualmed-COVID-chestxray-dataset"])
 
+
 ### Extract ###
+
 os.mkdir('rsna-data')
 rsna_zip = zipfile.ZipFile("./rsna-pneumonia-detection-challenge.zip")
 rsna_zip.extractall('rsna-data')
@@ -355,6 +365,7 @@ print("Cleaning Up...")
 os.remove("./rsna-pneumonia-detection-challenge.zip")
 os.remove("./train_split_v3.txt")
 os.remove("./test_split_v3.txt")
+os.remove("./COVID-19 Radiography Database.zip")
 shutil.rmtree("./covid-chestxray-dataset")
 shutil.rmtree("./Actualmed-COVID-chestxray-dataset")
 shutil.rmtree("./COVID-19 Radiography Database/")
