@@ -15,7 +15,7 @@ opencv-python==4.2.0.34
 pandas==1.0.5
 pathlib==1.0.1
 pbr==5.4.5
-Pillow==7.1.2
+Pillow==9.3.0
 prettytable==0.7.2
 progressbar2==3.34.3
 pydicom==2.0.0
