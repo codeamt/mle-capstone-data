@@ -1,6 +1,6 @@
 attrs==19.3.0
 beautifulsoup4==4.6.3
-certifi==2020.6.20
+certifi==2022.12.7
 chardet==3.0.4
 cliff==2.8.3
 cmd2==1.1.0
