@@ -2,7 +2,6 @@
 
 <p align="center">
  Data preprocessing submodule for Udacity's Machine Learning Engineer Nanodegree program. \n
- <img src="https://drive.google.com/uc?export=view&id=1xE3OFoQP3hdyI8nP_iU_i9Y7zLJZ4QQO" width="300" />
 </p>
 
  Generates the latest COVIDx Dataset for modeling; from benchmark research model first presented in [[1]](). 
